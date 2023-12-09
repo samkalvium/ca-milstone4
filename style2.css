@@ -1,0 +1,352 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("assets/backimg.png");
+    background-size: cover;
+    color: white;
+}
+
+/* HEADER PART */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+}
+
+.heading {
+    /* font-family: kotta one; */
+    background-color: rgba(250, 161, 0, 1);
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 10%;
+    padding: 4%;
+    padding-top: 1%;
+    height: 1%;
+    border: 5px solid rgba(255, 212, 134, 1);
+}
+
+.nav {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav img {
+    margin-top: 11%;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 40px;
+    width: 27%;
+    height: 25%;
+    background-color: rgba(250, 161, 0, 1);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button h4 {
+    font-size: medium;
+}
+
+
+/* ADDING STYLE FOR THE TOP CONTAINER  */
+
+.top-container {
+    background-color: rgba(255, 166, 0, 0.404);
+    border-top: 5px solid rgba(250, 161, 0, 1);
+    border-left: 5px solid rgba(250, 161, 0, 1);
+    border-right: 5px solid rgba(250, 161, 0, 1);
+    margin: 10px;
+    margin-top: 20px;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mid-top input {
+    border: 5px solid rgba(250, 161, 0, 1);
+    width: 300px;
+    height: 40px;
+}
+
+.mid-top {
+    text-align: center;
+    font-size: 20px;
+    padding-right: 8%;
+}
+
+.img-mid-top {
+    margin-left: -30px;
+    position: absolute;
+    top: 23%;
+    cursor: pointer;
+}
+
+
+/* ADDING STYLE FOR THE MIDDLE CONTAINER  */
+
+.middile-container {
+    background-color: rgba(255, 166, 0, 0.404);
+    border-left: 5px solid rgba(250, 161, 0, 1);
+    border-right: 5px solid rgba(250, 161, 0, 1);
+    margin: 10px;
+    margin-top: 0.5%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height:280px;
+}
+
+.item h3 {
+    padding-top: 1%;
+    padding-bottom: 5%;
+    font-size: 30px;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.slogan {
+    width: 250px;
+    padding-top: 5%;
+    font-size: 35px;
+}
+
+/* STYLING THE POPUP */
+.modal {
+    width: 900px;
+    height: fit-content;
+    background-image: url(assets/backimg-ing.png);
+    background-size: cover;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s;
+}
+
+.showpop {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.style-ingrds {
+    font-size: 23px;
+}
+
+.style-ingrds h3 {
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+
+.style-ingrds ul {
+    text-align: left;
+}
+
+.exit {
+    position: absolute;
+    top: 80%;
+    right: 3%;
+    width: 50px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* SEARCH MODAL  */
+.modal1 {
+    width: 900px;
+    height: fit-content;
+    background-image: url(assets/backimg-ing.png);
+    background-size: cover;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 30px 30px;
+    visibility: hidden;
+    transition: transform 0.4s;
+}
+
+.showpop1 {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+/* ADDING STYLE FOR THE LAST CONTAINER  */
+
+.bottom-container{
+    background-color: rgba(255, 166, 0, 0.404);
+    border-left: 5px solid rgba(250, 161, 0, 1);
+    border-right: 5px solid rgba(250, 161, 0, 1);
+    border-bottom: 5px solid rgba(250, 161, 0, 1);
+    margin: 10px;
+    margin-top: 0.5%;
+    padding-top: 1%;
+}
+
+.bottom-container h1{
+    padding-bottom: 20px;
+   text-align: center;
+}
+
+/* IMAGES PART  */
+.search-imgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+}
+
+.search-imgs img {
+    cursor: pointer;
+}
+
+.catoimgs {
+    width: 250px;
+    height: 40vh;
+}
+
+
+@media screen and (max-width:600px){
+    header{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+    header img{
+        width: 60px;
+        height: 60px;
+    }
+    .heading{
+        height: 35px;
+        margin-left: -10px;
+    }
+    .heading h1{
+        font-size: 15px;
+    }
+    button{
+        width: 15%;
+        position: relative;
+        right: 10px;
+        margin-right: 10px;
+        margin-top: 13px;
+    }
+    button h4{
+        font-size: 10px;
+    }
+    .nav {
+        position: relative;
+        margin-top: -20px;
+        width: 15%;
+       display: block;
+    }
+    .nav button{
+        width: 90%;
+    }
+    .nav img{
+        width: 30px;
+        height: auto;
+        position: relative;
+        right: auto;
+    }
+
+    .top-container{
+        display: block;
+        padding: 15px;
+    }
+    .mid-top{
+        text-align: center;
+    }
+    .mid-top input{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: fit-content;
+    }
+    .mid-top h1{
+        font-size: 25px;
+    }
+    .mid-top p{
+        font-size: 10px;
+        text-align: center;
+    }
+    .top-container img{
+        position: relative;
+    }
+    .mid-top img{
+        position: relative;
+        top: 8px;
+    }
+
+    .middile-container{
+        display: block;
+        height: 400px;
+        font-size: 15px;
+    }
+    .middile-container h1{
+        padding: 10px;
+    }
+    .item h3{
+        font-size: 20px;
+    }
+    .slogan{
+        font-size: 25px;
+        text-align: center;
+        width: fit-content;
+        padding: 10px;
+    }
+    .modal{
+        position: relative;
+        top: -20px;
+        width: fit-content;
+        height: fit-content;
+        display: block;
+        z-index: 1;
+    }
+    .style-ingrds h3{
+        font-size: 30px ;
+    }
+    .exit{
+        position: relative;
+        right: 0px;
+        align-items: center;
+    }
+
+    .search-imgs{
+        display: block;
+        position: relative;
+        height: auto;
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+    .catoimgs{
+        height: 45vh;
+    }
+}
