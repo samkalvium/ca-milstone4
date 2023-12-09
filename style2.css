@@ -330,6 +330,14 @@ button h4 {
         display: block;
         z-index: 1;
     }
+    .modal1{
+        position: relative;
+        top: -20px;
+        width: fit-content;
+        height: fit-content;
+        display: block;
+        z-index: 1;
+    }
     .style-ingrds h3{
         font-size: 30px ;
     }
